@@ -1,0 +1,597 @@
+  /* *************** VARIABLES *************** */
+  
+  :root{
+    --main-font: 'Roboto', 'Relaway', sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #212121;
+    --third-color: #757575;
+    --text-btn-color: #ffffff;
+  }
+
+/* ########################################### */
+
+  body{
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+  }
+
+
+/* *************** HEADER *************** */
+
+.logo-top,
+.logo-foter,
+.logo-foter-index{
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    top: 24px;
+    left: 215px;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: var(--main-color);
+}
+
+            /* MENU NAVIGATION */
+
+.menu-navigation-list{
+    list-style-type: none;
+}
+
+.menu-navigation-item-agency{
+    position: absolute;
+    width: 53px;
+    height: 16px;
+    top: 32px;
+    left: 453px;
+}
+
+.menu-navigation-item-portfolio{
+    position: absolute;
+    width: 58px;
+    height: 16px;
+    top: 32px;
+    left: 552px;
+}
+
+.menu-navigation-item-portfolio-link,
+.menu-navigation-item-agency,
+.menu-navigation-item-contact,
+.contact-details-header-mail,
+.contact-details-header-telephone{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.menu-navigation-item-portfolio-link{
+    color: var(--secondary-color);
+}
+
+.menu-navigation-item-portfolio-link:hover,
+.menu-navigation-item-agency:hover,
+.menu-navigation-item-contact:hover,
+.menu-navigation-item-portfolio-link:focus,
+.menu-navigation-item-portfolio-link:active,
+.menu-navigation-item-portfolio-link:visited{
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.menu-navigation-item-contact{
+    position: absolute;
+    width: 59px;
+    height: 16px;
+    top: 32px;
+    left: 656px;
+}
+
+            /* CONTACT DETAILS HEADER */
+
+.contact-details-top{
+    list-style-type: none;
+}
+
+.contact-details-top-mail{
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    top: 32px;
+    left: 1078px;
+}
+
+.contact-details-top-mail-link{
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.contact-details-top-mail-link:hover,
+.contact-details-foter-mail-link:hover,
+.contact-details-top-telephone-link:hover,
+.contact-details-foter-telephone-link:hover,
+.contact-details-top-mail-link:focus,
+.contact-details-foter-mail-link:focus,
+.contact-details-top-telephone-link:focus,
+.contact-details-foter-telephone-link:focus,
+.contact-details-foter-mail-link-index:hover,
+.contact-details-foter-mail-link-index:focus,
+.contact-details-foter-telephone-link-index:hover,
+.contact-details-foter-telephone-link-index:focus{
+    color: var(--main-color);
+}
+
+.contact-details-top-telephone{
+    position: absolute;
+    width: 120px;
+    height: 16px;
+    top: 32px;
+    left: 1263px;
+
+    color: var(--third-color);
+
+}
+
+.contact-details-top-telephone-link,
+.contact-details-foter-telephone-link,
+.contact-details-foter-telephone-link-index{
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+            /* END CONTACT DETAILS */        
+
+/* *************** END HEADER *************** */
+
+/* ************************************************************** */
+/* ************************* PORTFOLIO.HTML ************************* */
+/* ************************************************************** */
+
+/* *************** MAIN *************** */
+
+            /* BUTTONS */
+
+.menu {
+    list-style-type: none;   
+}
+
+.menu-item-all-btn,
+.menu-item-pages-btn,
+.menu-item-applications-btn,
+.menu-item-design-btn,
+.menu-item-marketing-btn{
+    position: absolute;
+    width: 121px;
+    height: 38px;
+    top: 174px;
+    left: 510px;
+
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.menu-item-all-btn:hover,
+.menu-item-pages-btn:hover,
+.menu-item-applications-btn:hover,
+.menu-item-design-btn:hover,
+.menu-item-marketing-btn:hover,
+.menu-item-all-btn:focus,
+.menu-item-pages-btn:focus,
+.menu-item-applications-btn:focus,
+.menu-item-design-btn:focus,
+.menu-item-marketing-btn:focus{
+    background-color: var(--main-color);
+    color: var(--text-btn-color);
+    cursor: pointer;
+}
+
+.menu-item-pages-btn{
+    position: absolute;
+    width: 93px;
+    height: 38px;
+    top: 174px;
+    left: 639px;
+}
+
+.menu-item-applications-btn{
+    position: absolute;
+    width: 114px;
+    height: 38px;
+    top: 174px;
+    left: 740px;
+}
+
+.menu-item-design-btn{
+    position: absolute;
+    width: 91px;
+    height: 38px;
+    top: 174px;
+    left: 862px;
+}
+
+.menu-item-marketing-btn{
+    position: absolute;
+    width: 121px;
+    height: 38px;
+    top: 174px;
+    left: 961px;
+}
+
+
+
+            /* PROJECTS */
+
+.projects{
+    list-style-type: none;
+}
+
+.project-item-first{
+    position: absolute;
+    top: 262px;
+    left: 215px;
+}
+
+.project-item-second{
+    position: absolute;
+    top: 262px;
+    left: 615;
+}
+
+.project-item-third{
+    position: absolute;
+    top: 262px;
+    left: 1015px;
+}
+
+.project-item-fourth{
+    position: absolute;
+    top: 696px;
+    left: 215px;
+}
+
+.project-item-fifth{
+    position: absolute;
+    top: 696px;
+    left: 615px;
+}
+
+.project-item-sixth{
+    position: absolute;
+    top: 696px;
+    left: 1015px;
+}
+
+.project-item-seventh{
+    position: absolute;
+    top: 1130px;
+    left: 215px;
+}
+
+.project-item-eighth{
+    position: absolute;
+    top: 1130px;
+    left: 615px;
+}
+
+.project-item-neinth{
+    position: absolute;
+    top: 1130px;
+    left: 1015px;
+}
+
+.project-name{
+    position: absolute;
+    top: 314px;
+
+    white-space: pre-wrap;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+
+    letter-spacing: 0.06em;
+}
+
+.category-name{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+
+    letter-spacing: 0.03em;
+
+    color: var(--third-color)
+}
+
+            /* END PROJECTS */
+
+/* *************** END MAIN *************** */
+/* ########################################### */
+/* *************** FOOTER *************** */
+
+.logo-foter,
+.logo-foter-index{
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    top: 1688px;
+    left: 215px;
+}
+
+.logo-foter-index{
+    top: 2157px;
+}
+
+
+.contact-details-foter,
+.contact-details-foter-index{
+    list-style-type: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+}
+
+.contact-details-foter-address,
+.contact-details-foter-address-index{
+    position: absolute;
+    width: 247px;
+    height: 21px;
+    top: 1739px;
+    left: 215px;
+}
+
+.contact-details-foter-address-index{
+    top: 2208px;
+}
+
+.contact-details-foter-mail-link,
+.contact-details-foter-mail-link-index{
+    color: var(--third-color);
+    text-decoration: underline;
+
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    top: 1769px;
+    left: 215px;
+}
+
+.contact-details-foter-mail-link-index{
+    top: 2238px;
+}
+
+.contact-details-foter-telephone,
+.contact-details-foter-telephone-link-index{
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    top: 1799px;
+    left: 215px;
+}
+
+.contact-details-foter-telephone-link-index{
+    top: 2268px;
+}
+
+
+
+/* *************** END FOOTER *************** */
+
+/* ************************************************************** */
+/* ************************* INDEX.HTML ************************* */
+/* ************************************************************** */
+
+/* *************** MAIN *************** */
+
+.head-main{
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.head-main-btn{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--text-btn-color);
+}
+
+.head-main-btn:hover{
+    cursor: pointer;
+}
+
+.lorem{
+    list-style-type: none;
+}
+
+.lorem-item-first,
+.lorem-item-second,
+.lorem-item-third,
+.lorem-item-fourth{
+    position: absolute;
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+}
+
+.lorem-item-second{
+    left: 515px;
+}
+
+.lorem-item-third{
+    left: 815px;
+}
+
+.lorem-item-fourth{
+    left: 1115px;
+}
+
+.lorem-item-first-text,
+.lorem-item-second-text,
+.lorem-item-third-text,
+.lorem-item-fourth-text{
+    position: absolute;
+    width: 270px;
+    height: 75px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+            /* SECTION NO.1 */
+
+.head-our-job,
+.head-section-team{
+    position: absolute;
+    width: 352px;
+    height: 42px;
+    left: 624px;
+    top: 969px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-job-list{
+    list-style-type: none;
+}
+
+.our-job-list-item-first,
+.our-job-list-item-second,
+.our-job-list-item-third{
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 1061px;
+}
+
+.our-job-list-item-second{
+    left: 615px;
+}
+
+.our-job-list-item-third{
+    left: 1015px;
+}
+
+            /* END SECTION NO.1 */
+
+            /* SECTION NO.2 */
+
+.head-our-team{
+    position: absolute;
+    width: 210px;
+    height: 42px;
+    left: 695px;
+    top: 1543px;
+}
+
+.our-team-list{
+    list-style-type: none;
+}
+
+.our-team-list-item-first,
+.our-team-list-item-second,
+.our-team-list-item-third,
+.our-team-list-item-fourth{
+    position: absolute;
+    left: 215px;
+    top: 1635px;
+}
+
+.our-team-list-item-second{
+    left: 515px;
+}
+
+.our-team-list-item-third{
+    left: 815px;
+}
+
+.our-team-list-item-fourth{
+    left: 1115px;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    white-space: pre-wrap;
+}
+
+.job-position{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+            /* END SECTION NO.2 */
+
+/* *************** END MAIN *************** */
