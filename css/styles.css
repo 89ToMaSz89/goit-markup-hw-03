@@ -6,19 +6,42 @@
     --secondary-color: #212121;
     --third-color: #757575;
     --text-btn-color: #ffffff;
+    --main-background-color: #2f303a;
+    --border-card-color: #eeeeee;
   }
 
 /* ########################################### */
+
+/* *************** GLOBAL SETTINGS  *************** */
 
   body{
     font-family: var(--main-font);
     color: var(--secondary-color);
   }
 
+  ul{
+    list-style-type: none;
+  }
+
+  h2{
+    position: absolute;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.116;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
+  }
+
+  *{
+    margin: 0px;
+  }
+
 
 /* *************** HEADER *************** */
 
-.logo-top,
+/* .logo-top,
 .logo-foter,
 .logo-foter-index{
     position: absolute;
@@ -36,13 +59,13 @@
     text-decoration: none;
 
     color: var(--main-color);
-}
+} */
 
             /* MENU NAVIGATION */
 
-.menu-navigation-list{
+/* .menu-navigation-list{
     list-style-type: none;
-}
+} */
 
 .menu-navigation-item-agency{
     position: absolute;
@@ -97,9 +120,9 @@
 
             /* CONTACT DETAILS HEADER */
 
-.contact-details-top{
+/* .contact-details-top{
     list-style-type: none;
-}
+} */
 
 .contact-details-top-mail{
     position: absolute;
@@ -157,22 +180,20 @@
 
 /* *************** MAIN *************** */
 
-            /* BUTTONS */
+            /* MENU */
 
-.menu {
-    list-style-type: none;   
+.menu{
+    display: flex;
+    justify-content: center;
 }
 
-.menu-item-all-btn,
-.menu-item-pages-btn,
-.menu-item-applications-btn,
-.menu-item-design-btn,
-.menu-item-marketing-btn{
-    position: absolute;
-    width: 121px;
-    height: 38px;
-    top: 174px;
-    left: 510px;
+.menu >.menu-item:not(last-child){
+    margin-right: 8px;
+    margin-top: 94px;
+}
+
+.menu-btn{
+    padding: 6px 22px;
 
     border-radius: 4px;
     border: none;
@@ -186,131 +207,54 @@
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--secondary-color);
 }
 
-.menu-item-all-btn:hover,
-.menu-item-pages-btn:hover,
-.menu-item-applications-btn:hover,
-.menu-item-design-btn:hover,
-.menu-item-marketing-btn:hover,
-.menu-item-all-btn:focus,
-.menu-item-pages-btn:focus,
-.menu-item-applications-btn:focus,
-.menu-item-design-btn:focus,
-.menu-item-marketing-btn:focus{
+.menu-btn:hover{
     background-color: var(--main-color);
     color: var(--text-btn-color);
+    
     cursor: pointer;
 }
 
-.menu-item-pages-btn{
-    position: absolute;
-    width: 93px;
-    height: 38px;
-    top: 174px;
-    left: 639px;
-}
-
-.menu-item-applications-btn{
-    position: absolute;
-    width: 114px;
-    height: 38px;
-    top: 174px;
-    left: 740px;
-}
-
-.menu-item-design-btn{
-    position: absolute;
-    width: 91px;
-    height: 38px;
-    top: 174px;
-    left: 862px;
-}
-
-.menu-item-marketing-btn{
-    position: absolute;
-    width: 121px;
-    height: 38px;
-    top: 174px;
-    left: 961px;
-}
-
-
+            /* END MENU */
 
             /* PROJECTS */
 
-.projects{
-    list-style-type: none;
+.project-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: center;
+   
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
 
-.project-item-first{
-    position: absolute;
-    top: 262px;
-    left: 215px;
+.project-card > .project-card-item{
+    width: 370px;
+
+    border-bottom: 1px solid var(--border-card-color);
+    background-color: var(--text-btn-color);
 }
 
-.project-item-second{
-    position: absolute;
-    top: 262px;
-    left: 615;
-}
-
-.project-item-third{
-    position: absolute;
-    top: 262px;
-    left: 1015px;
-}
-
-.project-item-fourth{
-    position: absolute;
-    top: 696px;
-    left: 215px;
-}
-
-.project-item-fifth{
-    position: absolute;
-    top: 696px;
-    left: 615px;
-}
-
-.project-item-sixth{
-    position: absolute;
-    top: 696px;
-    left: 1015px;
-}
-
-.project-item-seventh{
-    position: absolute;
-    top: 1130px;
-    left: 215px;
-}
-
-.project-item-eighth{
-    position: absolute;
-    top: 1130px;
-    left: 615px;
-}
-
-.project-item-neinth{
-    position: absolute;
-    top: 1130px;
-    left: 1015px;
-}
-
-.project-name{
-    position: absolute;
-    top: 314px;
-
-    white-space: pre-wrap;
+ .project-name{
+    padding: 20px 24px 4px 24px;
 
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
 
     letter-spacing: 0.06em;
+
+    color: var(--secondary-color);
 }
 
 .category-name{
+    padding: 4px 24px 20px 24px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.875;
@@ -318,7 +262,7 @@
     letter-spacing: 0.03em;
 
     color: var(--third-color)
-}
+} 
 
             /* END PROJECTS */
 
@@ -326,18 +270,43 @@
 /* ########################################### */
 /* *************** FOOTER *************** */
 
-.logo-foter,
+.foter{
+    background-color: var(--main-background-color);
+
+    box-sizing: border-box;
+    padding: 60px 1240px 60px 215px;
+}
+
+
+
+
+
+
+/* .logo-foter{
+    padding: 20px 1200px 20px 215px;
+
+    border: 2px solid red;
+} */
+
+/* .contact-foter{
+    box-sizing: border-box;
+
+    border: 2px solid red;
+} */
+/* .logo-foter,
 .logo-foter-index{
-    position: absolute;
+    padding: 20px 1240px 161px 215px;
+
+    /* position: absolute;
     width: 145px;
     height: 31px;
     top: 1688px;
-    left: 215px;
-}
+    left: 215px; 
+
 
 .logo-foter-index{
     top: 2157px;
-}
+} */
 
 
 .contact-details-foter,
@@ -404,12 +373,19 @@
 
 /* *************** MAIN *************** */
 
+
+            /* klasa pomocnicza  */
+.container{             
+    max-width: 1200px;
+     /* text-align: center; */
+} 
+            /* ................. */
+
 .head-main{
     position: absolute;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
+    
+    box-sizing: border-box;
+    background-color: var(--main-background-color);
 
     font-weight: 900;
     font-size: 44px;
@@ -417,14 +393,20 @@
 
     text-align: center;
     letter-spacing: 0.06em;
-}
+
+    color: var(--text-btn-color);
+
+    padding: 200px 452px 280px 452px;
+} 
 
 .head-main-btn{
     position: absolute;
-    width: 200px;
+    /* width: 200px;
     height: 50px;
     left: 700px;
-    top: 430px;
+    top: 430px; */
+
+    padding: 10px 41px 10px 42px;
 
     background-color: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -496,7 +478,7 @@
 
             /* SECTION NO.1 */
 
-.head-our-job,
+/* .head-our-job,
 .head-section-team{
     position: absolute;
     width: 352px;
@@ -509,11 +491,11 @@
     line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
-}
+} */
 
-.our-job-list{
+/* .our-job-list{
     list-style-type: none;
-}
+} */
 
 .our-job-list-item-first,
 .our-job-list-item-second,
@@ -545,9 +527,9 @@
     top: 1543px;
 }
 
-.our-team-list{
+/* .our-team-list{
     list-style-type: none;
-}
+} */
 
 .our-team-list-item-first,
 .our-team-list-item-second,
