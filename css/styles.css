@@ -310,64 +310,6 @@
 /* ########################################### */
 
 
-/* .contact-details-foter,
-.contact-details-foter-index{
-    list-style-type: none;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-
-    letter-spacing: 0.03em;
-}
-
-.contact-details-foter-address,
-.contact-details-foter-address-index{
-    position: absolute;
-    width: 247px;
-    height: 21px;
-    top: 1739px;
-    left: 215px;
-}
-
-.contact-details-foter-address-index{
-    top: 2208px;
-}
-
-.contact-details-foter-mail-link,
-.contact-details-foter-mail-link-index{
-    color: var(--third-color);
-    text-decoration: underline;
-
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    top: 1769px;
-    left: 215px;
-}
-
-.contact-details-foter-mail-link-index{
-    top: 2238px;
-}
-
-.contact-details-foter-telephone,
-.contact-details-foter-telephone-link-index{
-    position: absolute;
-    width: 231px;
-    height: 21px;
-    top: 1799px;
-    left: 215px;
-}
-
-.contact-details-foter-telephone-link-index{
-    top: 2268px;
-} */
-
-
-
-/* *************** END FOOTER *************** */
-
 /* ************************************************************** */
 /* ************************* INDEX.HTML ************************* */
 /* ************************************************************** */
@@ -381,7 +323,7 @@
 } 
             /* ................. */
 
-.head-main{
+/* .head-main{
     position: absolute;
     
     box-sizing: border-box;
@@ -397,14 +339,14 @@
     color: var(--text-btn-color);
 
     padding: 200px 452px 280px 452px;
-} 
+}  */
 
-.head-main-btn{
+/* .head-main-btn{
     position: absolute;
     /* width: 200px;
     height: 50px;
     left: 700px;
-    top: 430px; */
+    top: 430px; 
 
     padding: 10px 41px 10px 42px;
 
@@ -474,7 +416,7 @@
     letter-spacing: 0.03em;
 
     color: var(--third-color);
-}
+} */
 
             /* SECTION NO.1 */
 
