@@ -27,6 +27,10 @@
     padding: 0px;
   }
 
+h1{
+    margin: 0px;
+}
+
   h2{
     position: absolute;
     font-weight: 700;
@@ -329,17 +333,19 @@
 .heading{
     box-sizing: border-box;
 
-    padding: 200px 452px 280px 452px;
+    padding: 200px 0px 280px 0px;
 
     background-color: var(--main-background-color);
 }
 
 .heading-titlee{
-    display: inline;
-
+    /* display:inline-block; */
+    margin: 0px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
+
+    white-space: pre;
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -352,8 +358,8 @@
 
 
 .heading-btn{
-    margin-top: 30px;
-    margin-left: 248px; 
+    /* margin-top: 30px;
+    margin-left: 248px;  */
 
     padding: 10px 41px 10px 42px;
 
