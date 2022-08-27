@@ -8,6 +8,7 @@
     --text-btn-color: #ffffff;
     --main-background-color: #2f303a;
     --border-card-color: #eeeeee;
+    --border-main-head-color: #ececec;
   }
 
 /* ########################################### */
@@ -21,6 +22,8 @@
 
   ul{
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
   }
 
   h2{
@@ -34,143 +37,93 @@
     color: var(--secondary-color);
   }
 
-  *{
-    margin: 0px;
-  }
-
-
 /* *************** HEADER *************** */
 
-/* .logo-top,
-.logo-foter,
-.logo-foter-index{
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    top: 24px;
-    left: 215px;
 
+
+            /**************/
+            /* NAVIGATION */
+            /**************/
+
+.main-head{
+    margin: 0px;
+    padding: 32px 0px;
+
+    box-sizing: border-box;
+
+    background-color: var(--text-btn-color);
+    border-bottom: 1px solid var(--border-main-head-color);
+
+    display: flex;
+    align-items: center; 
+}
+
+.main-head-logo{
+    margin-left: 215px;
+    margin-right: 93px;
+    
     font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
 
     letter-spacing: 0.03em;
-    text-decoration: none;
 
     color: var(--main-color);
-} */
-
-            /* MENU NAVIGATION */
-
-/* .menu-navigation-list{
-    list-style-type: none;
-} */
-
-.menu-navigation-item-agency{
-    position: absolute;
-    width: 53px;
-    height: 16px;
-    top: 32px;
-    left: 453px;
+    text-decoration: none;
 }
 
-.menu-navigation-item-portfolio{
-    position: absolute;
-    width: 58px;
-    height: 16px;
-    top: 32px;
-    left: 552px;
+.menu-navigation{
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em; 
+
+    margin-right: 364px;
 }
 
-.menu-navigation-item-portfolio-link,
-.menu-navigation-item-agency,
-.menu-navigation-item-contact,
-.contact-details-header-mail,
-.contact-details-header-telephone{
+.menu-navigation-item:not(:last-child){
+    margin-right: 43px;
+}
+
+.menu-navigation .menu-navigation-item-link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.menu-navigation .menu-navigation-item-link:hover,
+.menu-navigation .menu-navigation-item-link:focus{
+    color: var(--main-color);
+}
+
+.main-head-contact{
+    display: flex;
+   
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-
-    text-decoration: none;
 }
 
-.menu-navigation-item-portfolio-link{
-    color: var(--secondary-color);
+.main-head-contact-item:first-child{
+    margin-right: 50px;
 }
 
-.menu-navigation-item-portfolio-link:hover,
-.menu-navigation-item-agency:hover,
-.menu-navigation-item-contact:hover,
-.menu-navigation-item-portfolio-link:focus,
-.menu-navigation-item-portfolio-link:active,
-.menu-navigation-item-portfolio-link:visited{
-    color: var(--main-color);
-    text-decoration: none;
-}
-
-.menu-navigation-item-contact{
-    position: absolute;
-    width: 59px;
-    height: 16px;
-    top: 32px;
-    left: 656px;
-}
-
-            /* CONTACT DETAILS HEADER */
-
-/* .contact-details-top{
-    list-style-type: none;
-} */
-
-.contact-details-top-mail{
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    top: 32px;
-    left: 1078px;
-}
-
-.contact-details-top-mail-link{
-    text-decoration: none;
+.main-head-contact .main-head-contact-item-link{
     color: var(--third-color);
+    text-decoration: none;
 }
 
-.contact-details-top-mail-link:hover,
-.contact-details-foter-mail-link:hover,
-.contact-details-top-telephone-link:hover,
-.contact-details-foter-telephone-link:hover,
-.contact-details-top-mail-link:focus,
-.contact-details-foter-mail-link:focus,
-.contact-details-top-telephone-link:focus,
-.contact-details-foter-telephone-link:focus,
-.contact-details-foter-mail-link-index:hover,
-.contact-details-foter-mail-link-index:focus,
-.contact-details-foter-telephone-link-index:hover,
-.contact-details-foter-telephone-link-index:focus{
+.main-head-contact .main-head-contact-item-link:hover,
+.main-head-contact .main-head-contact-item-link:focus{
     color: var(--main-color);
 }
-
-.contact-details-top-telephone{
-    position: absolute;
-    width: 120px;
-    height: 16px;
-    top: 32px;
-    left: 1263px;
-
-    color: var(--third-color);
-
-}
-
-.contact-details-top-telephone-link,
-.contact-details-foter-telephone-link,
-.contact-details-foter-telephone-link-index{
-    text-decoration: none;
-    color: var(--third-color);
-}
-
-            /* END CONTACT DETAILS */        
+            /******************/
+            /* END NAVIGATION */
+            /******************/       
 
 /* *************** END HEADER *************** */
 
@@ -180,16 +133,20 @@
 
 /* *************** MAIN *************** */
 
+            /********/
             /* MENU */
+            /********/
 
 .menu{
     display: flex;
-    justify-content: center;
+    align-items: center;
+
+    margin-top: 94px;
+    margin-left: 510;
 }
 
 .menu >.menu-item:not(last-child){
     margin-right: 8px;
-    margin-top: 94px;
 }
 
 .menu-btn{
@@ -218,9 +175,13 @@
     cursor: pointer;
 }
 
+            /************/
             /* END MENU */
+            /************/
 
+            /************/
             /* PROJECTS */
+            /************/
 
 .project-card{
     display: flex;
@@ -264,7 +225,9 @@
     color: var(--third-color)
 } 
 
+            /****************/
             /* END PROJECTS */
+            /****************/
 
 /* *************** END MAIN *************** */
 /* ########################################### */
