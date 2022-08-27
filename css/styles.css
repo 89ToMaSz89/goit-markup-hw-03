@@ -9,6 +9,7 @@
     --main-background-color: #2f303a;
     --border-card-color: #eeeeee;
     --border-main-head-color: #ececec;
+    --contact-foter-color: rgba(255, 255, 255, 0.6);
   }
 
 /* ########################################### */
@@ -138,6 +139,7 @@
             /********/
 
 .menu{
+     /* box-sizing: border-box;  */
     display: flex;
     align-items: center;
 
@@ -168,7 +170,8 @@
     color: var(--secondary-color);
 }
 
-.menu-btn:hover{
+.menu-btn:hover,
+.menu-btn:focus{
     background-color: var(--main-color);
     color: var(--text-btn-color);
     
@@ -183,27 +186,32 @@
             /* PROJECTS */
             /************/
 
+.picture-card{
+    margin: 0px;
+}
+
 .project-card{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
-    justify-content: center;
    
     margin-top: 50px;
     margin-bottom: 94px;
 }
 
 .project-card > .project-card-item{
-    width: 370px;
-
     border-bottom: 1px solid var(--border-card-color);
     background-color: var(--text-btn-color);
 }
 
- .project-name{
-    padding: 20px 24px 4px 24px;
+.project-card-item:nth-child(3n+1){
+    margin-left: 215px;
+}
 
+ .project-name{
+    margin-top: 20px;
+    margin-left: 24px;
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -214,7 +222,8 @@
 }
 
 .category-name{
-    padding: 4px 24px 20px 24px;
+    margin-top: 4px;
+    margin-left: 24px;
 
     font-weight: 400;
     font-size: 16px;
@@ -222,7 +231,7 @@
 
     letter-spacing: 0.03em;
 
-    color: var(--third-color)
+    color: var(--third-color);
 } 
 
             /****************/
@@ -234,45 +243,74 @@
 /* *************** FOOTER *************** */
 
 .foter{
-    background-color: var(--main-background-color);
-
     box-sizing: border-box;
-    padding: 60px 1240px 60px 215px;
+
+    margin: 0px;
+    padding: 60px 0px 60px 215px;
+
+    background-color: var(--main-background-color);
 }
 
+.foter-logo{  
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.foter-contact{
+    margin-top: 20px;
+}
+
+.foter-contact-details-item{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-btn-color);
+
+    margin-top: 9px;
+}
+
+.foter-contact-details-item-link,
+.foter-contact-details-item-telephone{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: var(--contact-foter-color);
+}
+
+.foter-contact-details-item-link{
+    text-decoration: underline;
+}
+
+.foter-contact-details-item-link:hover,
+.foter-contact-details-item-link:focus,
+.foter-contact-details-item-telephone:hover,
+.foter-contact-details-item-telephone:focus{
+    color: var(--main-color);
+}
+
+/* *************** END FOOTER *************** */
+/* ########################################### */
 
 
-
-
-
-/* .logo-foter{
-    padding: 20px 1200px 20px 215px;
-
-    border: 2px solid red;
-} */
-
-/* .contact-foter{
-    box-sizing: border-box;
-
-    border: 2px solid red;
-} */
-/* .logo-foter,
-.logo-foter-index{
-    padding: 20px 1240px 161px 215px;
-
-    /* position: absolute;
-    width: 145px;
-    height: 31px;
-    top: 1688px;
-    left: 215px; 
-
-
-.logo-foter-index{
-    top: 2157px;
-} */
-
-
-.contact-details-foter,
+/* .contact-details-foter,
 .contact-details-foter-index{
     list-style-type: none;
 
@@ -324,7 +362,7 @@
 
 .contact-details-foter-telephone-link-index{
     top: 2268px;
-}
+} */
 
 
 
@@ -340,7 +378,6 @@
             /* klasa pomocnicza  */
 .container{             
     max-width: 1200px;
-     /* text-align: center; */
 } 
             /* ................. */
 
