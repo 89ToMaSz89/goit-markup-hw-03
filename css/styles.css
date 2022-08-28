@@ -34,7 +34,6 @@ h1{
 
 h2{
     margin: 0px;
-    /* margin-bottom: 50px; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.116;
@@ -47,7 +46,7 @@ h2{
               /* klasa pomocnicza  */
 .container{             
     max-width: 1200px;
-} 
+}
             /* ................. */
 
 /* *************** HEADER *************** */
@@ -348,6 +347,7 @@ h2{
 
     text-align: center;
     letter-spacing: 0.06em; 
+    white-space: normal;
 
     color: var(--text-btn-color);
 }
@@ -438,85 +438,66 @@ h2{
     margin-right: 215px;
 }
 
-.fig{
+.ssection-card-person{
+    margin: 0px;
     
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--text-btn-color);
 }
 
+.ssection-card-person:not(last-child){
+    margin-right: 30px;
+}
 
+.ssection-card-person-name{
+    margin: 0px;
+    margin-top: 30px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .head-main{
-    position: absolute;
-    
-    box-sizing: border-box;
-    background-color: var(--main-background-color);
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
 
     text-align: center;
-    letter-spacing: 0.06em;
-
-    color: var(--text-btn-color);
-
-    padding: 200px 452px 280px 452px;
-}  */
-
-/* 
-
-.lorem{
-    list-style-type: none;
+    letter-spacing: 0.03em;
 }
 
-.lorem-item-first,
-.lorem-item-second,
-.lorem-item-third,
-.lorem-item-fourth{
-    position: absolute;
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 774px;
+.ssection-card-person-position{
+    margin: 0px;
+    margin-top: 10px;
 
-    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
 }
 
-.lorem-item-second{
-    left: 515px;
-}
 
-.lorem-item-third{
-    left: 815px;
-}
 
-.lorem-item-fourth{
-    left: 1115px;
-}
 
-.lorem-item-first-text,
-.lorem-item-second-text,
-.lorem-item-third-text,
-.lorem-item-fourth-text{
-    position: absolute;
-    width: 270px;
-    height: 75px;
 
-    
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             /* SECTION NO.1 */
 
