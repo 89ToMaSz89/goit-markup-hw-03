@@ -10,29 +10,31 @@
     --border-card-color: #eeeeee;
     --border-main-head-color: #ececec;
     --contact-foter-color: rgba(255, 255, 255, 0.6);
+    --bg-color: #f5f4fa;
   }
 
 /* ########################################### */
 
 /* *************** GLOBAL SETTINGS  *************** */
 
-  body{
+body{
     font-family: var(--main-font);
     color: var(--secondary-color);
-  }
+}
 
-  ul{
+ul{
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-  }
+}
 
 h1{
     margin: 0px;
 }
 
-  h2{
-    position: absolute;
+h2{
+    margin: 0px;
+    /* margin-bottom: 50px; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.116;
@@ -40,7 +42,7 @@ h1{
     letter-spacing: 0.03em;
 
     color: var(--secondary-color);
-  }
+}
 
               /* klasa pomocnicza  */
 .container{             
@@ -149,12 +151,12 @@ h1{
             /********/
 
 .menu{
-     /* box-sizing: border-box;  */
+    box-sizing: border-box; 
     display: flex;
     align-items: center;
 
     margin-top: 94px;
-    margin-left: 510;
+    margin-left: 510px; 
 }
 
 .menu >.menu-item:not(last-child){
@@ -380,6 +382,82 @@ h1{
             /* END HEADING */
             /***************/
 
+            /***********/
+            /* SECTION */
+            /***********/
+
+.distance-top{
+    padding-top: 44px;
+}
+
+.ssection{
+    box-sizing: border-box;
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.ssection-bg-color{
+    background-color: var(--bg-color);
+}
+
+.ssection-list{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+
+    margin-top: 50px;
+
+    color: var(--secondary-color);
+}
+
+.ssection-list .ssection-list-item-paragraph{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;
+
+    color: var(--third-color);
+}
+
+.ssection-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.ssection-list-item:first-child{
+    margin-left: 215px;
+}
+
+.ssection-list-item:last-child{
+    margin-right: 215px;
+}
+
+.fig{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* .head-main{
     position: absolute;
     
@@ -414,10 +492,7 @@ h1{
     left: 215px;
     top: 774px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
+    
 }
 
 .lorem-item-second{
@@ -440,13 +515,7 @@ h1{
     width: 270px;
     height: 75px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-
-    letter-spacing: 0.03em;
-
-    color: var(--third-color);
+    
 } */
 
             /* SECTION NO.1 */
