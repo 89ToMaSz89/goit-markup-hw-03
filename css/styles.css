@@ -331,57 +331,54 @@ h1{
             /***********/
 
 .heading{
-    box-sizing: border-box;
 
-    padding: 200px 0px 280px 0px;
+    box-sizing: border-box; 
 
-    background-color: var(--main-background-color);
+    background-color: var(--main-background-color); 
 }
 
 .heading-titlee{
-    /* display:inline-block; */
-    margin: 0px;
+    padding: 200px 452px 30px 452px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
 
-    white-space: pre;
+    text-align: center;
+    letter-spacing: 0.06em; 
+
+    color: var(--text-btn-color);
+}
+
+.main-btn{
+    margin-left: 658px;  
+    margin-bottom: 210px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
 
     text-align: center;
     letter-spacing: 0.06em;
 
     color: var(--text-btn-color);
 
-    border: 1px solid yellow;
-}
-
-
-
-.heading-btn{
-    /* margin-top: 30px;
-    margin-left: 248px;  */
-
     padding: 10px 41px 10px 42px;
 
     background-color: var(--main-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    border: none;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-
-    color: var(--text-btn-color);
-
-    /* border: 1px solid yellowgreen; */
+    border: none; 
 }
 
-.heading-btn:hover,
-.heading-btn:focus{
+.main-btn:hover,
+.main-btn:focus{
     cursor: pointer;
 }
+
+            /***************/
+            /* END HEADING */
+            /***************/
 
 /* .head-main{
     position: absolute;
