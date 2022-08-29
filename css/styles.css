@@ -283,7 +283,8 @@ h2{
     background-color: var(--main-background-color);
 }
 
-.foter-logo{  
+.foter-logo-web-part,
+.foter-logo-studio-part{  
     
     font-family: 'Raleway';
     font-style: normal;
@@ -293,8 +294,15 @@ h2{
 
     letter-spacing: 0.03em;
 
-    color: var(--main-color);
     text-decoration: none;
+}
+
+.foter-logo-web-part{
+    color: var(--main-color);
+}
+
+.foter-logo-studio-part{
+    color: var(--text-btn-color);
 }
 
 .foter-contact{
