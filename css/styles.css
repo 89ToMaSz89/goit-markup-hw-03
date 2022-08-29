@@ -122,7 +122,7 @@ h2{
 
 .menu-navigation .menu-navigation-item-link:hover,
 .menu-navigation .menu-navigation-item-link:focus,
-.menu-navigation .menu-navigation-item-link:visited{
+.menu-navigation .menu-navigation-item-link:active{
     color: var(--main-color);
 }
 
