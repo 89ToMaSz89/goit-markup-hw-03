@@ -44,7 +44,10 @@ h2{
 }
 
               /* klasa pomocnicza  */
-.container{             
+.container{     
+    margin: 0px;
+    margin-left: 215px;     
+    
     max-width: 1200px;
 }
             /* ................. */
@@ -57,22 +60,24 @@ h2{
             /* NAVIGATION */
             /**************/
 
+.main-head-border-bottom{
+    border-bottom: 1px solid var(--border-main-head-color);
+}
+
 .main-head{
     margin: 0px;
     padding: 32px 0px;
 
     box-sizing: border-box;
-
-    background-color: var(--text-btn-color);
-    border-bottom: 1px solid var(--border-main-head-color);
-
     display: flex;
     align-items: center; 
+
+    background-color: var(--text-btn-color);
 }
 
-.main-head-logo{
-    margin-left: 215px;
-    margin-right: 93px;
+.main-head-logo-web-part,
+.main-head-logo-studio-part{
+    margin: 0px;
     
     font-family: 'Raleway';
     font-style: normal;
@@ -82,11 +87,20 @@ h2{
 
     letter-spacing: 0.03em;
 
-    color: var(--main-color);
     text-decoration: none;
 }
 
+.main-head-logo-web-part{
+    color: var(--main-color);
+}
+
+.main-head-logo-studio-part{
+    margin-right: 93px;
+    color: var(--secondary-color);
+}
+
 .menu-navigation{
+    margin: 0px;
     display: flex;
 
     font-weight: 500;
@@ -112,6 +126,7 @@ h2{
 }
 
 .main-head-contact{
+    margin: 0px;
     display: flex;
    
     font-weight: 500;
@@ -150,6 +165,8 @@ h2{
             /********/
 
 .menu{
+    margin: 0px;
+
     box-sizing: border-box; 
     display: flex;
     align-items: center;
@@ -158,11 +175,13 @@ h2{
     margin-left: 510px; 
 }
 
-.menu >.menu-item:not(last-child){
-    margin-right: 8px;
+.menu >.menu-item:not(:first-child){
+    margin-left: 8px;
 }
 
 .menu-btn{
+    margin: 0px;
+
     padding: 6px 22px;
 
     border-radius: 4px;
@@ -202,6 +221,9 @@ h2{
 }
 
 .project-card{
+    margin: 0px;
+
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -215,11 +237,9 @@ h2{
     background-color: var(--text-btn-color);
 }
 
-.project-card-item:nth-child(3n+1){
-    margin-left: 215px;
-}
-
  .project-name{
+    margin: 0px;
+
     margin-top: 20px;
     margin-left: 24px;
     
@@ -233,8 +253,7 @@ h2{
 }
 
 .category-name{
-    margin-top: 4px;
-    margin-left: 24px;
+    margin: 4px 0px 20px 24px;
 
     font-weight: 400;
     font-size: 16px;
@@ -257,7 +276,8 @@ h2{
     box-sizing: border-box;
 
     margin: 0px;
-    padding: 60px 0px 60px 215px;
+    
+    padding: 60px 0px;
 
     background-color: var(--main-background-color);
 }
@@ -332,6 +352,7 @@ h2{
             /***********/
 
 .heading{
+    margin: 0px;
 
     box-sizing: border-box; 
 
@@ -339,6 +360,8 @@ h2{
 }
 
 .heading-titlee{
+    margin: 0px;
+
     padding: 200px 452px 30px 452px;
 
     font-weight: 900;
@@ -353,6 +376,8 @@ h2{
 }
 
 .main-btn{
+    margin: 0px;
+
     margin-left: 658px;  
     margin-bottom: 210px;
 
@@ -391,6 +416,8 @@ h2{
 }
 
 .ssection{
+    margin: 0px;
+
     box-sizing: border-box;
 
     padding-top: 94px;
@@ -402,6 +429,8 @@ h2{
 }
 
 .ssection-list{
+    margin: 0px;
+
     display: flex;
     align-items:center;
     justify-content: center;
@@ -426,16 +455,8 @@ h2{
     color: var(--third-color);
 }
 
-.ssection-list-item:not(:last-child){
-    margin-right: 30px;
-}
-
-.ssection-list-item:first-child{
-    margin-left: 215px;
-}
-
-.ssection-list-item:last-child{
-    margin-right: 215px;
+.ssection-list-item:not(:first-child){
+    margin-left: 30px;
 }
 
 .ssection-card-person{
@@ -468,7 +489,9 @@ h2{
 
 .ssection-card-person-position{
     margin: 0px;
-    margin-top: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
 
     font-weight: 400;
     font-size: 16px;
@@ -480,123 +503,10 @@ h2{
     color: var(--third-color);
 }
 
+            /***************/
+            /* END SECTION */
+            /***************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /* SECTION NO.1 */
-
-/* .head-our-job,
-.head-section-team{
-    position: absolute;
-    width: 352px;
-    height: 42px;
-    left: 624px;
-    top: 969px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.166;
-    text-align: center;
-    letter-spacing: 0.03em;
-} */
-
-/* .our-job-list{
-    list-style-type: none;
-} */
-
-/* .our-job-list-item-first,
-.our-job-list-item-second,
-.our-job-list-item-third{
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1061px;
-}
-
-.our-job-list-item-second{
-    left: 615px;
-}
-
-.our-job-list-item-third{
-    left: 1015px;
-} */
-
-            /* END SECTION NO.1 */
-
-            /* SECTION NO.2 */
-
-/* .head-our-team{
-    position: absolute;
-    width: 210px;
-    height: 42px;
-    left: 695px;
-    top: 1543px;
-} */
-
-/* .our-team-list{
-    list-style-type: none;
-} */
-
-/* .our-team-list-item-first,
-.our-team-list-item-second,
-.our-team-list-item-third,
-.our-team-list-item-fourth{
-    position: absolute;
-    left: 215px;
-    top: 1635px;
-}
-
-.our-team-list-item-second{
-    left: 515px;
-}
-
-.our-team-list-item-third{
-    left: 815px;
-}
-
-.our-team-list-item-fourth{
-    left: 1115px;
-}
-
-.team-name{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.188;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    white-space: pre-wrap;
-}
-
-.job-position{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.188;
-
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--third-color);
-} */
-
-            /* END SECTION NO.2 */
-
-/* *************** END MAIN *************** */
+/* ************************************ */
+/* *************** END MAIN *********** */
+/* ************************************ */
