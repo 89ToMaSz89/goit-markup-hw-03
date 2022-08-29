@@ -485,6 +485,7 @@ h2{
 
     text-align: center;
     letter-spacing: 0.03em;
+    /* white-space: pre; */
 }
 
 .ssection-card-person-position{
@@ -499,6 +500,7 @@ h2{
 
     text-align: center;
     letter-spacing: 0.03em;
+    /* white-space: pre; */
 
     color: var(--third-color);
 }
