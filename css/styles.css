@@ -121,7 +121,8 @@ h2{
 }
 
 .menu-navigation .menu-navigation-item-link:hover,
-.menu-navigation .menu-navigation-item-link:focus{
+.menu-navigation .menu-navigation-item-link:focus,
+.menu-navigation .menu-navigation-item-link:visited{
     color: var(--main-color);
 }
 
@@ -485,7 +486,6 @@ h2{
 
     text-align: center;
     letter-spacing: 0.03em;
-    /* white-space: pre; */
 }
 
 .ssection-card-person-position{
@@ -500,7 +500,6 @@ h2{
 
     text-align: center;
     letter-spacing: 0.03em;
-    /* white-space: pre; */
 
     color: var(--third-color);
 }
