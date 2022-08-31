@@ -46,7 +46,7 @@ h2{
               /* klasa pomocnicza  */
 .container{     
     margin: 0px;
-    margin-left: 215px;     
+    margin-left: 0 auto;     
     
     max-width: 1200px;
 }
