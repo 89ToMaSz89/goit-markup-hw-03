@@ -274,11 +274,11 @@ h2{
 
 .foter{
     box-sizing: border-box;
-
-    margin: 0px;
     
     padding: 60px 0px;
+}
 
+.foter-overlay{
     background-color: var(--main-background-color);
 }
 
@@ -424,7 +424,6 @@ h2{
 }
 
 .ssection{
-    margin: 0px;
 
     box-sizing: border-box;
 
@@ -432,12 +431,11 @@ h2{
     padding-bottom: 94px;
 }
 
-.ssection-bg-color{
+.ssection-overlay{
     background-color: var(--bg-color);
 }
 
 .ssection-list{
-    margin: 0px;
 
     display: flex;
     align-items:center;
