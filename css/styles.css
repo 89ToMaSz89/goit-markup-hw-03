@@ -64,14 +64,11 @@ h2{
 }
 
 .main-head{
-    margin: 0px;
-
-    padding: 32px 0px;
-
     box-sizing: border-box;
     display: flex;
     align-items: center; 
-    justify-content: center;
+
+    padding: 32px 0px;
 
     background-color: var(--text-btn-color);
 }
@@ -174,8 +171,7 @@ h2{
     display: flex;
     align-items: center;
 
-    margin-top: 94px;
-    margin-left: 510px; 
+    padding-left: 295px;
 }
 
 .menu >.menu-item:not(:first-child){
@@ -232,7 +228,6 @@ h2{
     gap: 30px;
    
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 .project-card > .project-card-item{
